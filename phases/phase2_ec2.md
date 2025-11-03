@@ -5,12 +5,38 @@
 Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in AWS — introducing you to the “Compute” part of the cloud.
 
 ## 🧩 Tasks
-1. Launch a `t2.micro` EC2 instance with Amazon Linux 2.  
-2. Create and download a key pair named `mesha-keypair`.  
-3. Configure a security group allowing SSH from your IP.  
-4. Connect using SSH and verify connectivity.  
-5. (Optional) Install Apache web server and test via browser.  
-6. Stop or terminate the instance when finished.
+
+### Step 1 — Launch an Instance
+**Goal:** Create a virtual server in the cloud.  
+**Actions:**  
+1. Open the **AWS Management Console → EC2**.  
+2. Click **Launch Instance**.  
+3. Configure your instance:
+   - **AMI:** `Amazon Linux 2`
+   - **Instance Type:** `t2.micro` (Free Tier)
+   - **Key Pair:** Create or select `mesha-keypair.pem`
+   - **Network:** Default VPC  
+4. Leave all other settings at their defaults and click **Launch Instance**.
+
+---
+
+### Step 2 — Configure Network Access
+**Goal:** Ensure secure SSH access to your instance.  
+**Actions:**  
+1. Navigate to **EC2 → Instances → Your Instance → Security → Security Groups**.  
+2. Edit inbound rules:  
+   - **Type:** SSH | **Port:** 22 | **Source:** *My IP*  
+3. Save rules.
+
+---
+
+### Step 3 — Connect to the Instance
+**Goal:** Access your EC2 instance via SSH.  
+**Actions:**  
+1. Copy the **Public IPv4 address** of your instance.  
+2. Open your terminal and run:
+   ```bash
+   ssh -i mesha-keypair.pem ec2-user@<public-ip>
 
 ## 💡 Tips
 - Always use the Free Tier (`t2.micro`) for practice.  
