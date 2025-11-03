@@ -103,12 +103,14 @@ You’ll explore versioning, encryption, and access management — foundational 
 ## 💡 Notes
 - S3 stores **objects**, not files — each has metadata and versioning.  
 - Versioning + encryption = strong cloud security hygiene.  
-- Buckets are globally named — use unique identifiers if needed.
+- Use clear, unique bucket names (they’re global).
+- Never disable “Block All Public Access” unless you need to host public assets.
 
 ## 📘 Reflection Questions
-1. Why should all public access be blocked by default?  
-2. How does encryption at rest protect data?  
-3. What’s the benefit of object versioning in S3?  
+1. Why should all public access be blocked by default?
+2. When might you enable public access intentionally?
+3. How does encryption at rest protect data?  
+4. What’s the benefit of object versioning in S3?  
 
 ## 📸 Screenshot
 Add your screenshot(s):  
