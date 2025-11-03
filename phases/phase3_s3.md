@@ -2,11 +2,6 @@
 # Phase 3 — Storage with Amazon S3
 
 ## 🎯 Goal
-Learn how to store, secure, and manage objects in AWS using **Simple Storage Service (S3)**. You’ll create a private, encrypted, versioned S3 bucket and explore how access control works in AWS.
-
-# Phase 3 — Storage with Amazon S3
-
-## 🎯 Goal
 Learn how to create, secure, and manage object storage in AWS using **Amazon S3**.  
 You’ll explore versioning, encryption, and access management — foundational skills for secure cloud storage.
 
