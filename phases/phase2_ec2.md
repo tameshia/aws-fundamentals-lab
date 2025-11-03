@@ -64,8 +64,8 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
    _(Example: [http://3.145.78.12](http://3.145.78.12))_
 
    🔍 How to Find Your EC2 Public IP?
-         -Go to AWS Management Console → EC2 → Instances. <b>
-         2. Select the instance you launched (the one running Amazon Linux 2).<b>
+         1. Go to AWS Management Console → EC2 → Instances. 
+         2. Select the instance you launched (the one running Amazon Linux 2).
          3. In the Instance Summary (bottom panel or details view), look for:
             Public IPv4 address → something like `3.145.78.12`
 
