@@ -75,9 +75,9 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
     ```bash
    (Optional) Customize your web page:
    echo "Hello from Mesha’s AWS EC2 Lab!" | sudo tee /var/www/html/index.html
-    
-Refresh your browser - your message should now display instead of the default page.
-   ---
+    ```
+   Refresh your browser - your message should now display instead of the default page.
+   
 ### Step 5 - Clean Up
 **Goal:** Prevent unnecessary costs by stopping or terminating your instance when finished.
 **Actions:**
