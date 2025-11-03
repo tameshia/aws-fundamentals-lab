@@ -172,3 +172,20 @@ By completing this lab, you will:
 3. Launch and connect:
    ```bash
    ssh -i mesha-keypair.pem ec2-user@<public-ip>
+
+   ---
+
+## 💾 Phase 3 — Storage with Amazon S3
+**Goal:** Learn to store, secure, and manage objects using **S3**.
+
+### 🪜 Tasks
+1. Open **S3 → Create bucket** → Name: `mesha-fundamentals-lab`.  
+2. Keep “Block all public access” ✅ enabled.  
+3. Upload a file named `hello.txt` with the message “Hello from Mesha’s AWS Lab!”.  
+4. Enable **Versioning** → re-upload a new version to test.  
+5. Turn on **Default encryption** (SSE-S3).  
+6. Add a bucket policy that denies non-HTTPS requests (optional).  
+7. Test with:
+   ```bash
+   aws s3 ls s3://mesha-fundamentals-lab
+
