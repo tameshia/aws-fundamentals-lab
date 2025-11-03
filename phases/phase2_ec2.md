@@ -52,7 +52,8 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
    sudo systemctl start httpd
    sudo systemctl enable httpd
  ```
-3. Open a browser and visit [http://<public-ip>](http://<public-ip>)
+3. Open a browser and visit `http://<public-ip>`
+
 
 4. You should see the default Apache Test Page confirming that the web server is active.
 ```bash
