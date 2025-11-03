@@ -72,7 +72,7 @@ Public IPv4 address → something like 3.145.78.12
 
 
 
-5. You should see the default Apache Test Page confirming that the web server is active.
+4. You should see the default Apache Test Page confirming that the web server is active.
     ```bash
    (Optional) Customize your web page:
    echo "Hello from Mesha’s AWS EC2 Lab!" | sudo tee /var/www/html/index.html
