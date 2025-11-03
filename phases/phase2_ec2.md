@@ -72,7 +72,8 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
 ---
 
 4. You should see the default Apache Test Page confirming that the web server is active.
-    ```bash
+
+   ```bash
    (Optional) Customize your web page:
    echo "Hello from Mesha’s AWS EC2 Lab!" | sudo tee /var/www/html/index.html
     ```
