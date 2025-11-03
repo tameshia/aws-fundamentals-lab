@@ -73,14 +73,12 @@ Public IPv4 address → something like 3.145.78.12
 
 
 5. You should see the default Apache Test Page confirming that the web server is active.
-```bash
-(Optional) Customize your web page:
-
-echo "Hello from Mesha’s AWS EC2 Lab!" | sudo tee /var/www/html/index.html
-```
+    ```bash
+   (Optional) Customize your web page:
+   echo "Hello from Mesha’s AWS EC2 Lab!" | sudo tee /var/www/html/index.html
+      ```
 Refresh your browser - your message should now display instead of the default page.
-
----
+   ---
 ### Step 5 - Clean Up
 **Goal:** Prevent unnecessary costs by stopping or terminating your instance when finished.
 **Actions:**
