@@ -135,4 +135,3 @@ You should see your web page or test page.
 ## 📸 Screenshot
 Add screenshots here:  
 `../screenshots/phase4_vpc_dashboard.png`
-
