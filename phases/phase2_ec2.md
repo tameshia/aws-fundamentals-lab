@@ -61,13 +61,15 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
    sudo systemctl enable httpd
     ```
 3. Open a browser and visit `http://<public-ip>`  
-   _(Example: [http://3.145.78.12](http://3.145.78.12))_
+   *(Example: [http://3.145.78.12](http://3.145.78.12))*
 
    🔍 **How to Find Your EC2 Public IP:**
-      - Open the **AWS Management Console**
-     - Go to **EC2 → Instances**
-     - Select your running instance (**Amazon Linux 2**)
-     - Check the **Public IPv4 address** in the details panel (for example: `3.145.78.12`)
+   - Open the **AWS Management Console**
+   - Go to **EC2 → Instances**
+   - Select your running instance (**Amazon Linux 2**)
+   - Check the **Public IPv4 address** in the details panel  
+     *(for example: `3.145.78.12`)*
+
        
 ---
 
