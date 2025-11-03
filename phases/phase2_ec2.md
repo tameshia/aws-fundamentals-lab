@@ -26,7 +26,9 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
 1. Navigate to **EC2 → Instances → Your Instance → Security → Security Groups**.  
 2. Edit inbound rules:  
    - **Type:** SSH | **Port:** 22 | **Source:** *My IP*  
-3. Save rules.
+3. *(Optional)* Add a second rule for web access:  
+   - **Type:** HTTP | **Port:** 80 | **Source:** `0.0.0.0/0`  
+4. Save rules.
 
 ---
 
@@ -37,6 +39,7 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
 2. Open your terminal and run:
    ```bash
    ssh -i mesha-keypair.pem ec2-user@<public-ip>
+
 3. Verify the connection:
    ```bash
    uname -a
