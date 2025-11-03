@@ -189,3 +189,22 @@ By completing this lab, you will:
    ```bash
    aws s3 ls s3://mesha-fundamentals-lab
 
+---
+
+## 🌐 Phase 4 — Networking with Amazon VPC
+**Goal:** Understand how AWS networks are structured using **Virtual Private Clouds (VPCs)** — and how subnets, route tables, and security groups control traffic within your environment.
+
+### 🪜 Tasks
+1. Open **VPC** in the AWS Management Console.  
+2. Explore your **Default VPC** and review its:
+   - Subnets  
+   - Route Tables  
+   - Internet Gateways  
+3. Create a **Security Group** named `mesha-web-sg` with the following inbound rules:  
+   - SSH (Port 22) — Source: *My IP*  
+   - HTTP (Port 80) — Source: *0.0.0.0/0*  
+4. Attach the new security group to your EC2 instance from Phase 2.  
+5. From your local terminal, connect to your EC2 instance and run:
+   ```bash
+   curl http://169.254.169.254/latest/meta-data/public-ipv4
+
