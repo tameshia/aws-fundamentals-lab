@@ -208,3 +208,53 @@ By completing this lab, you will:
    ```bash
    curl http://169.254.169.254/latest/meta-data/public-ipv4
 
+---
+
+## 📈 Phase 5 — Monitoring & Billing
+**Goal:** Learn how to use AWS’s monitoring and cost management tools — **CloudWatch**, **CloudTrail**, and **Budgets** — to track performance, detect issues, and control costs within your AWS environment.
+
+### 🪜 Tasks
+1. **Enable CloudTrail**
+   - Navigate to **CloudTrail** in the AWS Management Console.  
+   - Select **Create trail** → Name it `mesha-cloudtrail`.  
+   - Choose **Create a new S3 bucket** (e.g., `mesha-cloudtrail-logs`).  
+   - Enable **Log file validation** and ensure *Management Events* are checked.  
+   - Click **Create trail** and verify that logging is active.
+
+2. **Review CloudTrail Logs**
+   - Open the S3 bucket (`mesha-cloudtrail-logs`).  
+   - Browse to a recent log file and open it to view the JSON entries.  
+   - Each entry records *who did what, when, and from which IP or service*.
+
+3. **Create a CloudWatch Dashboard**
+   - Go to **CloudWatch → Dashboards → Create dashboard**.  
+   - Name your dashboard `mesha-lab-dashboard`.  
+   - Add a **Line widget** → Metric: `EC2 → Per-Instance Metrics → CPUUtilization`.  
+   - Save and verify the CPU graph displays data from your EC2 instance.
+
+4. **Set a CloudWatch Alarm**
+   - Go to **CloudWatch → Alarms → Create alarm**.  
+   - Choose metric: `EC2 → CPUUtilization`.  
+   - Condition: Trigger when CPU > **70%** for **5 consecutive minutes**.  
+   - Name the alarm `mesha-high-cpu` and save.  
+   - Test by temporarily increasing CPU load (optional).
+
+5. **Create a Cost Budget**
+   - Navigate to **Billing → Budgets → Create budget**.  
+   - Type: **Cost budget**.  
+   - Name: `mesha-lab-budget`.  
+   - Amount: `$5.00` monthly limit.  
+   - Add your email for notifications and confirm creation.  
+   - Review the budget status after a few hours to confirm tracking.
+
+6. *(Optional)* **Enable Trusted Advisor**
+   - Open **Trusted Advisor → Dashboard**.  
+   - Review recommendations under:
+     - 🧠 *Security* (e.g., open ports, missing MFA)  
+     - 💰 *Cost Optimization* (e.g., unused instances, idle volumes)  
+   - Use insights to improve your lab’s configuration and security posture.
+
+💡 *CloudTrail tracks every action, CloudWatch monitors system behavior, and Budgets ensures cost awareness — together, they form the foundation of cloud governance.*
+
+---
+
