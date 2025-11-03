@@ -117,7 +117,7 @@ You should see your web page or test page.
 ### Step 8 — Clean Up
 **Goal:** Avoid charges and maintain a tidy environment.
 **Actions:**  
-1.Terminate your EC2 instance
+1. Terminate your EC2 instance
 2. Detach and delete the Internet Gateway
 3. Delete your Route Table, Subnet, and finally the VPC
 🧹 Always remove unused network resources when done.
