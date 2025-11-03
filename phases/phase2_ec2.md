@@ -101,5 +101,5 @@ Refresh your browser - your message should now display instead of the default pa
 ## 📸 Screenshot
 Add screenshots to: `../screenshots/phase2_ec2_launch.png`
 
-🔙 [Back to Main README](../README.md) | ⏭ [Next Phase →](phase2_ec2.md)
+🔙 [Back to Main README](../README.md) | ⏭ [Next Phase →](phase3_s3.md)
 
