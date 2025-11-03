@@ -55,6 +55,15 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
 3. Open a browser and visit `http://<public-ip>`  
    _(Example: [http://3.145.78.12](http://3.145.78.12))_
 
+   🔍 How to Find Your EC2 Public IP
+
+Go to AWS Management Console → EC2 → Instances.
+
+Select the instance you launched (the one running Amazon Linux 2).
+
+In the Instance Summary (bottom panel or details view), look for:
+Public IPv4 address → something like 3.145.78.12
+
 
 
 5. You should see the default Apache Test Page confirming that the web server is active.
