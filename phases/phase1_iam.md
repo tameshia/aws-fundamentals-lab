@@ -17,3 +17,6 @@ IAM enforces least privilege. Avoid daily root usage.
 
 ## 📸 Screenshot
 Add screenshot here: `../screenshots/phase1_iam_setup.png`
+
+🔙 [Back to Main README](../README.md) | ⏭ [Next Phase →](phase2_ec2.md)
+
