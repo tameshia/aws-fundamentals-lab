@@ -37,7 +37,12 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
 2. Open your terminal and run:
    ```bash
    ssh -i mesha-keypair.pem ec2-user@<public-ip>
-
+3. Verify the connection:
+   ```bash
+   uname -a
+   ```
+   You should see <i>Amazon Linux 2</i> system details.
+   
 ---
 
 ### Step 4 — Optional: Install a Web Server
