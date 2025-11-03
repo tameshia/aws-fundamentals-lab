@@ -90,6 +90,15 @@ You’ll explore versioning, encryption, and access management — foundational 
      ]
    }
 
+### Step 6 — Verify Storage Properties
+**Goal:** Review your bucket's security posture.  
+**Actions:**  
+   - Confirm Block Public Access = Enabled
+   - Confirm Versioning = Enabled
+   - Confirm Default encryption = Enabled
+   - Confirm Policy status = Active
+
+✅ Your S3 bucket now follows best-practice security standards.
 
 ## 💡 Notes
 - S3 stores **objects**, not files — each has metadata and versioning.  
