@@ -36,7 +36,7 @@ You’ll track activity, visualize metrics, and set up cost alerts to help you s
      "userIdentity": {"userName": "mesha-admin"},
      "sourceIPAddress": "98.xx.xx.xx"
    }
-
+💡 These logs are your security timeline — every AWS action leaves a footprint.
 
 ## 💡 Notes
 - CloudTrail = **Who did what**.  
