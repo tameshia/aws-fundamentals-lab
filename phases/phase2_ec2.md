@@ -48,11 +48,20 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
    sudo yum update -y
    sudo yum install httpd -y
 2. Start and enable the Apache service so it automatically runs on boot:
- sudo systemctl start httpd
-sudo systemctl enable httpd
-
+ ```bash
+   sudo systemctl start httpd
+   sudo systemctl enable httpd
+ ```
 3. Open a browser and visit
-   http://<public-ip>
+    [http://<public-ip>](http://<public-ip>
+)
+4. You should see the default Apache Test Page confirming that the web server is active.
+```bash
+(Optional) Customize your web page:
+
+echo "Hello from Mesha’s AWS EC2 Lab!" | sudo tee /var/www/html/index.html
+```
+Refresh your browser - your message should now display instead of the default page.
 
 ---
 ### Step 5 - Clean Up
