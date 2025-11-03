@@ -100,7 +100,27 @@ You’ll build your own VPC with a subnet, route table, and internet gateway —
 4. Once running, connect using:
    ```bash
    ssh -i mesha-keypair.pem ec2-user@<public-ip>
+✅ Your EC2 instance now lives in your own virtual network — fully under your control.
 
+### Step 7 — Verify Connectivity
+**Goal:** Confirm your instance can reach the internet and web traffic flows correctly.  
+**Actions:**  
+1. Run inside your EC2 terminal:
+     ```bash
+     ping -c 3 google.com
+2. If you installed Apache earlier (Phase 2), open your browser to:
+  `http://<public-ip>`
+You should see your web page or test page.
+💡 This confirms your routes, gateway, and security group are configured correctly.
+
+---
+### Step 8 — Clean Up
+**Goal:** Avoid charges and maintain a tidy environment.
+**Actions:**  
+1.Terminate your EC2 instance
+2. Detach and delete the Internet Gateway
+3. Delete your Route Table, Subnet, and finally the VPC
+🧹 Always remove unused network resources when done.
 
 ## 💡 Notes
 - VPCs isolate your AWS resources into secure, private networks.  
