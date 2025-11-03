@@ -4,10 +4,13 @@
 Learn how to securely manage AWS users, groups, and roles.
 
 ## 🧩 Tasks
-1. Log in as root only once to enable MFA.
-2. Create your `mesha-admin` IAM user.
-3. Enable password policy and MFA.
-4. Test sign-in and least privilege access.
+1. Log in as your AWS root account **only once** to set up IAM.
+2. Create an **Admin user** named `mesha-admin` with:
+   - MFA enabled  
+   - `AdministratorAccess` policy  
+3. Create an **IAM Group** (`Admins`) and attach your user.
+4. Enable a strong **password policy** for all users.
+5. Sign out and only use your IAM user going forward.
 
 ## 📝 Notes
 IAM enforces least privilege. Avoid daily root usage.
