@@ -38,6 +38,19 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
    ```bash
    ssh -i mesha-keypair.pem ec2-user@<public-ip>
 
+---
+
+### Step 4 — Optional: Install a Web Server
+**Goal:** Explore hosting and network accessibility.  
+**Actions:**  
+1. In your SSH session, install Apache:
+   ```bash
+   sudo yum update -y
+   sudo yum install httpd -y
+   sudo systemctl start httpd
+   sudo systemctl enable httpd
+
+
 ## 💡 Tips
 - Always use the Free Tier (`t2.micro`) for practice.  
 - Keep your `.pem` file private!  
