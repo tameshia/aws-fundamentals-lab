@@ -40,111 +40,35 @@ You’ll track activity, visualize metrics, and set up cost alerts to help you s
 
 ---
 
-Step 3 — Create a CloudWatch Dashboard
-
-Goal: Visualize resource performance and trends.
-Actions:
-
-Go to CloudWatch → Dashboards → Create dashboard.
-
-Name it: mesha-lab-dashboard.
-
-Add a widget → Line graph → Metric → EC2 → Per-Instance Metrics → CPUUtilization.
-
-Select your EC2 instance → click Create widget.
-
-Add another widget (optional):
-
-NetworkIn or StatusCheckFailed for health monitoring.
-
+### Step 3 — Create a CloudWatch Dashboard
+**Goal:** Visualize resource performance and trends.
+**Actions:**
+1. Go to **CloudWatch → Dashboards → Create dashboard.**
+2. Name it: `mesha-lab-dashboard`.
+3. Add a widget → **Line graph → Metric → EC2 → Per-Instance Metrics → CPUUtilization.**
+4. Select your EC2 instance → click Create widget.
+5. Add another widget (optional):
+  -**NetworkIn** or **StatusCheckFailed** for health monitoring.
 💡 Dashboards make it easy to spot trends and issues across your cloud environment.
 
-Step 4 — Create a CloudWatch Alarm
-
-Goal: Set up automated alerts for high CPU usage.
-Actions:
-
-Go to CloudWatch → Alarms → Create alarm.
-
-Choose metric: EC2 → CPUUtilization.
-
-Set conditions:
-
-Threshold type: Static
-
-Whenever CPUUtilization is > 70% for 5 minutes
-
-Name the alarm: mesha-high-cpu.
-
-(Optional) Add an email notification by creating an SNS topic.
-
+### Step 4 — Create a CloudWatch Alarm
+**Goal:** Set up automated alerts for high CPU usage.
+**Actions:**
+1. Go to **CloudWatch → Alarms → Create alarm.**
+2. Choose metric: `EC2 → CPUUtilization`.
+3. Set conditions:
+     -Threshold type: Static
+      - Whenever CPUUtilization is > 70% for 5 minutes
+4. Name the alarm: `mesha-high-cpu`.
+5. (Optional) Add an email notification by creating an **SNS topic**.
 💡 Alarms notify you when something unusual happens, so you can respond fast.
+   
+   
+7. Add a widget → **Line graph → Metric → EC2 → Per-Instance Metrics → CPUUtilization.**
+8. Select your EC2 instance → click Create widget.
+9. Add another widget (optional):
 
-Step 5 — Create a Budget Alert
-
-Goal: Track and control your spending with AWS Budgets.
-Actions:
-
-Go to Billing → Budgets → Create budget.
-
-Choose Cost budget and click Next.
-
-Configure:
-
-Budget name: mesha-lab-budget
-
-Period: Monthly
-
-Budget amount: $5.00
-
-Under Alerts, add your email address to get notifications.
-
-Review and click Create budget.
-
-After a few hours, check for data under Budgets.
-
-💡 Budgets help you learn cloud cost management — a key certification skill.
-
-Step 6 — (Optional) Enable Trusted Advisor
-
-Goal: Get recommendations for improving security and reducing costs.
-Actions:
-
-Open Trusted Advisor → Dashboard.
-
-Review checks under:
-
-🧠 Security (e.g., open ports, MFA not enabled)
-
-💰 Cost Optimization (e.g., idle instances)
-
-Note one area you could improve in your setup.
-
-💡 Trusted Advisor gives real-time best-practice insights for your account.
-
-Step 7 — Verify Everything Works
-
-Goal: Confirm monitoring and alerts are functioning.
-Actions:
-
-View your CloudWatch dashboard — check for CPU metrics.
-
-Open your CloudTrail S3 logs — confirm new activity entries.
-
-Verify your Budget alert email arrives when costs increase.
-
-✅ Your environment is now fully observable — performance, security, and cost visibility all in one place.
-
-Step 8 — Clean Up
-
-Goal: Keep your account organized and cost-free.
-Actions:
-
-Delete the CloudWatch dashboard and alarm.
-
-Delete your CloudTrail trail and associated S3 bucket.
-
-Delete the budget if no longer needed.
+NetworkIn or StatusCheckFailed for health monitoring.
 
 🧹 Keep a clean AWS account to avoid confusion or unexpected charges.
 ## 💡 Notes
