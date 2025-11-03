@@ -42,6 +42,7 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
 - Always use the Free Tier (`t2.micro`) for practice.  
 - Keep your `.pem` file private!  
 - Update your security group if SSH fails.
+- Always use SSH from your own IP for security.
 
 ## 📘 Reflection Questions
 1. What is a key pair used for?  
