@@ -56,10 +56,10 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
    sudo yum update -y
    sudo yum install httpd -y
 2. Start and enable the Apache service so it automatically runs on boot:
- ```bash
+    ```bash
    sudo systemctl start httpd
    sudo systemctl enable httpd
- ```
+    ```
 3. Open a browser and visit `http://<public-ip>`  
    _(Example: [http://3.145.78.12](http://3.145.78.12))_
 
