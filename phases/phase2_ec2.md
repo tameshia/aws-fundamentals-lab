@@ -50,17 +50,29 @@ Learn how to launch, connect to, and secure a virtual machine (EC2 instance) in 
    sudo systemctl start httpd
    sudo systemctl enable httpd
 
+---
+### Step 5 - Clean Up
+**Goal:** Prevent unnecessary costs by stopping or terminating your instance when finished.
+**Actions:**
+1. In the AWS Console, go to EC2 → Instances.
+2. Select your instance and choose Instance State → Terminate.
+3. Confirm that the instance status changes to terminated.
+4. Delete unused key pairs if you no longer need them.
 
 ## 💡 Tips
 - Always use the Free Tier (`t2.micro`) for practice.  
 - Keep your `.pem` file private!  
-- Update your security group if SSH fails.
+- If SSH fails, double-check your security group inbound rules.
 - Always use SSH from your own IP for security.
 
 ## 📘 Reflection Questions
 1. What is a key pair used for?  
 2. How do security groups protect EC2 instances?  
 3. What happens if you leave an instance running overnight?
+4. How could you automate EC2 deployment in the future?
 
 ## 📸 Screenshot
 Add screenshots to: `../screenshots/phase2_ec2_launch.png`
+
+🔙 [Back to Main README](../README.md) | ⏭ [Next Phase →](phase2_ec2.md)
+
