@@ -1,0 +1,16 @@
+# 🪞 Reflections — AWS Fundamentals Lab
+
+## Phase 1 — IAM
+…
+
+## Phase 2 — EC2
+…
+
+## Phase 3 — S3
+…
+
+## Phase 4 — VPC
+…
+
+## Phase 5 — Monitoring
+…
