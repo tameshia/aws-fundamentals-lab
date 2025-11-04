@@ -100,7 +100,6 @@ You’ll create dashboards, alarms, and cost alerts to ensure visibility and acc
 
 ---
 
-<p align="center">✨ “Start small, think big — every cloud builds upward.” ✨</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/AWS-Cloud_Fundamentals-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Badge"/>
