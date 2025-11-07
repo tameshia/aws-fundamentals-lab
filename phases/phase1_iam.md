@@ -16,7 +16,9 @@ Learn how to securely manage AWS users, groups, and roles.
 IAM enforces least privilege. Avoid daily root usage.
 
 ## 📸 Screenshot
-Add screenshot here: `../screenshots/phase1_iam_setup.png`
+Add screenshot here:
+![IAM Dashboard](../screenshots/phase1_iam_dashboard.png)
+
 
 🔙 [Back to Main README](../README.md) | ⏭ [Next Phase →](phase2_ec2.md)
 
