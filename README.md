@@ -101,11 +101,6 @@ You’ll create dashboards, alarms, and cost alerts to ensure visibility and acc
 ---
 
 
-<p align="center">
-  <img src="https://img.shields.io/badge/AWS-Cloud_Fundamentals-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Badge"/>
-  <img src="https://img.shields.io/badge/Security+-SY0--701-181717?style=for-the-badge&logo=compTIA&logoColor=white" alt="Security+ Badge"/>
-  <img src="https://img.shields.io/badge/Status-In_Progress-006400?style=for-the-badge" alt="Status Badge"/>
-</p>
 
 
 
